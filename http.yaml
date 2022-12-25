@@ -3,7 +3,7 @@
   hosts: all
   tasks:
   - name: Install apache packages 
-    yum:
+    apt:
       name: httpd
       state: present
   - name: ensure httpd is running
